@@ -15,7 +15,13 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Deploy
+
+```bash
+npm run gh-pages
+```
+
+## Building (remove)
 
 To create a production version of your app:
 
