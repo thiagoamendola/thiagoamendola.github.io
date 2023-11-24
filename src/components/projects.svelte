@@ -13,7 +13,7 @@
     {#if ready}
 
         <p transition:fly={{ y: 200, duration: 2000 }}>
-            I'M A TEST CODE HAHAHAHAH LOOK AT ME
+            This is my last personal game: Katazuke
         </p>
 
         <div transition:fade>
