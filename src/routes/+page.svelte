@@ -2,7 +2,7 @@
   import Projects from "../components/projects.svelte"
 </script>
 
-<h1 class="text-lg font-bold underline">
+<h1 class="font-bold underline">
     Thiago Amendola Page
 </h1>
 <p>
