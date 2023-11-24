@@ -1,25 +1,21 @@
 <script>
-    import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 
-    let katazuke = "/images/katazuke.jpeg";
-    let ready = false;
+	let katazuke = '/images/katazuke.jpeg';
+	let ready = false;
 
-    onMount(() => ready = true);
+	onMount(() => (ready = true));
 </script>
 
 <div class="always-visible">
+	<h2>Personal Projects</h2>
 
-    {#if ready}
+	{#if ready}
+		<p transition:fly={{ y: 200, duration: 2000 }}>This is my latest personal game: Katazuke</p>
 
-        <p transition:fly={{ y: 200, duration: 2000 }}>
-            This is my last personal game: Katazuke
-        </p>
-
-        <div transition:fade>
-            <img src={katazuke} alt="Screenshot of game Katazuke">
-        </div>
-
-    {/if}
-
+		<div transition:fade>
+			<img src={katazuke} alt="Screenshot of game Katazuke" />
+		</div>
+	{/if}
 </div>
