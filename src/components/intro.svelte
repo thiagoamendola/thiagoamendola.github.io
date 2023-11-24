@@ -3,11 +3,10 @@
 		<p>
 			Hello! My name is <b>Thiago Amendola</b>. I'm a professional programmer with more than 6 years
 			of industry. My specialties are
-			<span
-				class="inline-flex bg-rose-900 text-white rounded-md items-center px-1.5 py-1 text-sm font-medium ring-inset"
-				>Gameplay</span
-			>, Procedural Generation and UI. My objective as a Game Developer is to create enjoyable,
-			meaningful and impactful experiences.
+			<span class="skill-span bg-rose-900">Gameplay</span>,
+			<span class="skill-span bg-lime-600">Procedural Generation</span> and
+			<span class="skill-span bg-cyan-600">UI</span>. My objective as a Game Developer is to create
+			enjoyable, meaningful and impactful experiences.
 		</p>
 	</div>
 </div>
