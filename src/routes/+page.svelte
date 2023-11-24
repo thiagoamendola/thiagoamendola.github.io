@@ -1,20 +1,22 @@
 <script lang="ts">
-  import Projects from "../components/projects.svelte"
-  import Intro from "../components/intro.svelte"
+	import Navbar from '../components/navbar.svelte';
+	import Intro from '../components/intro.svelte';
+	import Projects from '../components/projects.svelte';
 </script>
 
-<h1 class="font-bold underline">
-    Thiago Amendola
-</h1>
+<div class="relative">
+	<div class="pb-20">
+		<Navbar />
+	</div>
 
-<div class="wrapper-content">
-    <Intro />
-</div>
+	<div class="wrapper-content">
+		<Intro />
+	</div>
 
-<div class="wrapper-content">
-  <Projects />
+	<div class="wrapper-content">
+		<Projects />
+	</div>
 </div>
 
 <style>
-
 </style>

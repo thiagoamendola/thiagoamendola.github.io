@@ -8,8 +8,8 @@
 	onMount(() => (ready = true));
 </script>
 
-<div class="always-visible">
-	<h2>Personal Projects</h2>
+<div class="always-visible px-5 py-3 lg:px-8">
+	<h1>Personal Projects</h1>
 
 	{#if ready}
 		<p transition:fly={{ y: 200, duration: 2000 }}>This is my latest personal game: Katazuke</p>
