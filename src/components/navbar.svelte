@@ -15,7 +15,7 @@
 <div class="fixed z-10 w-full">
 	<nav class="flex items-center justify-between flex-wrap bg-stone-800 p-6">
 		<div class="flex items-center flex-shrink-0 text-white mr-6">
-			<h1 class="font-semibold tracking-tight"><a href="#top">Thiago Amendola</a></h1>
+			<h1 class="font-semibold tracking-tight"><a href="/">Thiago Amendola</a></h1>
 		</div>
 		<div class="block lg:hidden">
 			<button
@@ -59,12 +59,14 @@
 				<a
 					href="#home"
 					class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
+					on:click={handleMenuButtonClick}
 				>
 					Home
 				</a>
 				<a
 					href="#personal-projects"
 					class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
+					on:click={handleMenuButtonClick}
 				>
 					Personal Projects
 				</a>
