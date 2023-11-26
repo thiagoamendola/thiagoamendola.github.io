@@ -19,15 +19,38 @@
 		</div>
 		<div class="block lg:hidden">
 			<button
-				class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-slate-300 hover:border-slate-300"
+				class="flex items-center px-3 py-2 {isMenuOpen
+					? ''
+					: 'border'} rounded text-white border-white hover:text-slate-300 hover:border-slate-300"
 				on:click={handleMenuButtonClick}
 			>
-				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-					><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg
-				>
+				{#if !isMenuOpen}
+					<svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+						><title>Menu</title><path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+						/></svg
+					>
+				{:else}
+					<svg
+						class="fill-current h-6 w-6 stroke-current -mt-2"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 20 20"
+					>
+						<title>Close</title>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				{/if}
 			</button>
 		</div>
-		<!-- {#if isMenuOpen} -->
 		<div
 			class="w-full block flex-grow {isMenuOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-auto"
 			on:focusout={handleMenuFocusLoss}
@@ -47,6 +70,5 @@
 				</a>
 			</div>
 		</div>
-		<!-- {/if} -->
 	</nav>
 </div>
