@@ -1,4 +1,6 @@
 <script>
+	import { fly } from 'svelte/transition';
+
 	let isMenuOpen = false;
 
 	const handleMenuButtonClick = () => {
@@ -51,26 +53,31 @@
 				{/if}
 			</button>
 		</div>
-		<div
-			class="w-full block flex-grow {isMenuOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-auto"
-			on:focusout={handleMenuFocusLoss}
-		>
-			<div class="text-sm lg:flex-grow">
-				<a
-					href="#home"
-					class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
-					on:click={handleMenuButtonClick}
-				>
-					Home
-				</a>
-				<a
-					href="#personal-projects"
-					class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
-					on:click={handleMenuButtonClick}
-				>
-					Personal Projects
-				</a>
+		{#key isMenuOpen}
+			<div
+				class="w-full block flex-grow {isMenuOpen
+					? ''
+					: 'hidden'} lg:flex lg:items-center lg:w-auto"
+				on:focusout={handleMenuFocusLoss}
+				in:fly={{ x: -200, duration: 500 }}
+			>
+				<div class="text-sm lg:flex-grow">
+					<a
+						href="#home"
+						class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
+						on:click={handleMenuButtonClick}
+					>
+						Home
+					</a>
+					<a
+						href="#personal-projects"
+						class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
+						on:click={handleMenuButtonClick}
+					>
+						Personal Projects
+					</a>
+				</div>
 			</div>
-		</div>
+		{/key}
 	</nav>
 </div>
