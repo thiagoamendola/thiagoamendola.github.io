@@ -2,6 +2,7 @@
 	import Navbar from '../components/navbar.svelte';
 	import Intro from '../components/intro.svelte';
 	import Projects from '../components/projects.svelte';
+	import Contact from '../components/contact.svelte';
 </script>
 
 <div class="relative">
@@ -15,6 +16,10 @@
 
 	<div class="wrapper-content">
 		<Projects />
+	</div>
+
+	<div class="wrapper-content">
+		<Contact />
 	</div>
 </div>
 

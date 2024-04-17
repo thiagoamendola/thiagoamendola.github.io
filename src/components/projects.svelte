@@ -8,7 +8,7 @@
 	onMount(() => (ready = true));
 </script>
 
-<div id="personal-projects" class="always-visible px-5 py-3 lg:px-8">
+<div id="personal-projects" class="always-visible px-5 py-3 lg:px-8 bg-[#d3dded]">
 	<h1>Personal Projects</h1>
 
 	{#if ready}
