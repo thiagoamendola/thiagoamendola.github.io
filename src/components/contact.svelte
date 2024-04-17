@@ -2,8 +2,8 @@
 	let itchio = '/images/itchio-logo.svg';
 </script>
 
-<div id="contact" class="always-visible px-5 py-3 lg:px-8 bg-[#819cc7]">
-	<h1 class="mb-3">Contact</h1>
+<div id="contact" class="always-visible px-5 py-3 pb-5 lg:px-8 bg-[#819cc7]">
+	<h1 class="mb-5">Contact</h1>
 
 	<div>
 		<!-- Github -->
