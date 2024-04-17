@@ -1,12 +1,16 @@
 # thiagoamendola.github.io
 
-## Setup
+This website is made using [Svelte](https://svelte.dev/) and [Tailwind](https://tailwindcss.com/).
+
+## How to run
+
+### Setup
 
 ```bash
 npm install
 ```
 
-## Developing
+### Developing
 
 ```bash
 npm run dev
@@ -15,7 +19,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Deploy
+### Deploy
 
 ```bash
 npm run gh-pages
