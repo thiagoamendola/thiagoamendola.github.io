@@ -76,6 +76,13 @@
 					>
 						Personal Projects
 					</a>
+					<a
+						href="#contact"
+						class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
+						on:click={handleMenuButtonClick}
+					>
+						Contact
+					</a>
 				</div>
 			</div>
 		{/key}
