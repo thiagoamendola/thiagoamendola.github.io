@@ -23,6 +23,7 @@
 	<!-- CREATE CARD COMPONENT OUT OF THESE -->
 
 	{#if ready}
+	    <!-- Decrease width of entire div. Dead space should be on the side -->
 		<div
 			in:fly={{ x: -200, duration: 600 }}
 			class="relative p-6 bg-gradient-to-br from-[#f5f0fa] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-6 md:mx-16 my-8"
