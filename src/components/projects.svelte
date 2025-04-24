@@ -9,9 +9,9 @@
 
 	const katazukeProject = {
 		title: 'Katazuke',
-		description: 'Party game inspired by “Overcooked” and Marie Kondo',
+		description: 'Party game inspired by “Overcooked” and Marie Kondo in Unity',
 		features: [
-			'Implemented competitive party game in Unity.',
+			'Implemented Gameplay, UI, Controller support and Tutorial systems.',
 			'Created dynamic loading system that uses single game environment with multiple game scenes seamlessly.'
 		],
 		image: '/images/katazuke.jpeg',

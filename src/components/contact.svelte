@@ -59,4 +59,8 @@
 			</button>
 		</a>
 	</div>
+
+	<p class="font-mono text-black text-right">
+		Created using Svelte + Tailwind
+	</p>
 </div>
