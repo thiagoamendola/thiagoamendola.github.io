@@ -27,6 +27,6 @@ npm run gh-pages
 
 ### TODO
 
-- Make first card template to apply for all projects
-- Make card smaller and centered
 - Revamp Contact section
+- Make video/gif/boilerplate image for the intro background
+- Make game jam section
