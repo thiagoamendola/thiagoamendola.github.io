@@ -19,7 +19,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-### Deploy
+### Deploy (currently not working with latest packages)
 
 ```bash
 npm run gh-pages
