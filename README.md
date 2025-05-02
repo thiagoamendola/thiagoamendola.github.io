@@ -27,6 +27,7 @@ npm run gh-pages
 
 ### TODO
 
-- Revamp Contact section
+- Make Icon for top bar
+- Fix project card margin on Desktop
 - Make video/gif/boilerplate image for the intro background
 - Make game jam section
