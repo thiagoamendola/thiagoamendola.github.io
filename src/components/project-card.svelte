@@ -13,7 +13,7 @@
 		
 <div
 	in:fly={{ x: -200, duration: 600 }}
-	class="relative p-6 bg-gradient-to-br from-[#f5f0fa] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto my-8 max-w-xl md:max-w-6xl"
+	class="relative p-8 bg-gradient-to-br from-[#f5f0fa] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto my-8 max-w-xl md:max-w-6xl"
 > 
 	<!-- Text Column -->
 	<div class="flex flex-col">
@@ -69,7 +69,7 @@
 	</div>
 
 	<!-- Image Column -->
-	<div class="flex justify-end items-center mr-8 mt-4 mb-4 ">
+	<div class="flex w-full justify-end items-center mr-8 mt-4 mb-4">
 		<img
 			in:fade={{ delay: 600, duration: 800 }}
 			src={image}
