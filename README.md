@@ -27,6 +27,5 @@ npm run gh-pages
 
 ### TODO
 
-- Fix project card margin on Desktop
 - Make video/gif/boilerplate image for the intro background
 - Make game jam section
