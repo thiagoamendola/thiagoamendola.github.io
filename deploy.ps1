@@ -1,30 +1,47 @@
 # Deploy to GitHub Pages using PowerShell
 
-# Step 1: Build the project
-npm run build
-
-# Step 1.5: Stash any working changes
+Write-Host "Step 1: Stashing any working changes..."
 git stash
 
-# Step 2: Save current branch name
+Write-Host "Step 2: Building the project..."
+npm run build
+
+Write-Host "Step 3: Copying build contents to temporary location..."
+$TempDeployDir = "$env:TEMP\deploy-gh-pages-tmp"
+if (Test-Path $TempDeployDir) { Remove-Item -Path $TempDeployDir -Recurse -Force }
+New-Item -ItemType Directory -Path $TempDeployDir | Out-Null
+Copy-Item -Path "build/*" -Destination $TempDeployDir -Recurse -Force
+
+Write-Host "Step 4: Saving current branch name..."
 $CurrentBranch = git rev-parse --abbrev-ref HEAD
 
-# Step 3: Switch to gh-pages branch (create if doesn't exist)
+Write-Host "Step 5: Switching to gh-pages branch..."
 git checkout gh-pages
 
-# Step 4: Remove all files except .git (clean branch)
-Get-ChildItem -Path . -Exclude ".git" | Remove-Item -Recurse -Force
+Write-Host "Step 6: Copying required build contents from temp to root..."
+$itemsToCopy = @("_app", "images", ".nojekyll", "favicon.png", "index.html")
+foreach ($item in $itemsToCopy) {
+    $source = Join-Path $TempDeployDir $item
+    if (Test-Path $source) {
+        Write-Host "Copying $item..."
+        Copy-Item -Path $source -Destination "." -Recurse -Force
+    } else {
+        Write-Host "$item not found in build output."
+    }
+}
 
-# Step 5: Copy build contents to root
-Copy-Item -Path "build/*" -Destination "." -Recurse -Force
-
-# Step 6: Add, commit, and push
+Write-Host "Step 7: Adding, committing, and pushing changes..."
 git add .
 git commit -m "Deploy to GitHub Pages through script"
 git push origin gh-pages
 
-# Step 7: Switch back to original branch
+Write-Host "Step 8: Switching back to original branch..."
 git checkout $CurrentBranch
 
-# Step 7.5: Restore stashed changes
+Write-Host "Step 9: Restoring stashed changes..."
 git stash pop
+
+Write-Host "Step 10: Cleaning up temporary deploy folder..."
+Remove-Item -Path $TempDeployDir -Recurse -Force
+
+Write-Host "Deployment script finished."
