@@ -19,7 +19,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-### Deploy (currently not working with latest packages)
+### Deploy
 
 ```bash
 npm run gh-pages
@@ -27,5 +27,6 @@ npm run gh-pages
 
 ### TODO
 
+- Add Luar Assault
 - Make video/gif/boilerplate image for the intro background
 - Make game jam section
