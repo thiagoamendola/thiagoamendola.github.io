@@ -61,7 +61,7 @@
 				on:focusout={handleMenuFocusLoss}
 				in:fly={{ x: -200, duration: 500 }}
 			>
-				<div class="text-sm lg:flex-grow">
+				<div class="text-sm lg:flex-grow lg:flex lg:justify-end">
 					<a
 						href="#home"
 						class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
