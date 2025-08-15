@@ -38,10 +38,8 @@
 	};
 </script>
 
-<div id="personal-projects" class="always-visible px-5 py-3 pb-8 lg:px-8 bg-[#d3dded]">
-	<h1 class="text-center mt-4">Personal Projects</h1>
-
-	<!-- CREATE CARD COMPONENT OUT OF THESE -->
+<div id="personal-projects" class="always-visible px-5 lg:px-8 py-3 pb-8 bg-[#d3dded]">
+	<h1 class="text-center">Personal Projects</h1>
 
 	{#if ready}
 		
