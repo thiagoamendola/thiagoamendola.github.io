@@ -1,5 +1,5 @@
-<div id="home" class="relative isolate px-6 pt-14 lg:px-8 bg-slate-400">
-	<div class="mx-8 md:mx-auto max-w-2xl py-48 md:py-32 lg:py-56">
+<div id="home" class="relative isolate px-6 lg:px-8 bg-slate-400">
+	<div class="mx-8 md:mx-auto max-w-2xl py-14 lg:py-16">
 		<p class="text-lg">
 			Hello! My name is <b>Thiago Amendola</b>. I'm a professional programmer with more than 8 years
 			of industry. My specialties are
