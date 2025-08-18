@@ -63,13 +63,6 @@
 			>
 				<div class="text-sm lg:flex-grow lg:flex lg:justify-end">
 					<a
-						href="#home"
-						class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
-						on:click={handleMenuButtonClick}
-					>
-						Home
-					</a>
-					<a
 						href="#personal-projects"
 						class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-300 mr-4"
 						on:click={handleMenuButtonClick}
