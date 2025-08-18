@@ -15,6 +15,7 @@
 			'Created dynamic loading system that uses single game environment with multiple game scenes seamlessly.'
 		],
 		image: '/images/katazuke.jpeg',
+		staticImage: true,
 		altText: 'Screenshot of game Katazuke, showing two Matryoshka-like dolls having a discussion in a cardboard bedroom',
 		links: {
 			itchio: 'https://ticolol.itch.io/katazuke',
@@ -30,6 +31,7 @@
 			'Implemented an interactive graphical representation of RGB Cube discretization process as a proof-of-concept.',
 		],
 		image: '/images/lut_title.png',
+		staticImage: true,
 		altText: 'Screenshot of Godot LUT Shader project, with a screenshot of a game scene showcasing different screen filters.',
 		links: {
 			github: 'https://github.com/thiagoamendola/godot-color-lut-shader',
