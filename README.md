@@ -27,9 +27,6 @@ npm run gh-pages
 
 ### TODO
 
-- Change colors
-- Align intro and projects
-- Make split project
 - Make About
 - Add Luar Assault
 - Make video/gif/boilerplate image for the intro background
