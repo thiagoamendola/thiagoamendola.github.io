@@ -65,14 +65,14 @@
 					<div class="text-sm lg:flex-grow lg:flex lg:justify-end">
 						<a
 							href="#personal-projects"
-							class="block mt-4 lg:inline-block lg:mt-0 text-navbar-text hover:text-navbar-hover-text mr-4"
+							class="block mt-4 lg:inline-block lg:mt-0 text-navbar-text hover:text-navbar-hover-text mr-8 font-semibold tracking-wide text-lg"
 							on:click={handleMenuButtonClick}
 						>
 							Personal Projects
 						</a>
 						<a
 							href="#contact"
-							class="block mt-4 lg:inline-block lg:mt-0 text-navbar-text hover:text-navbar-hover-text mr-4"
+							class="block mt-4 lg:inline-block lg:mt-0 text-navbar-text hover:text-navbar-hover-text mr-8 font-semibold tracking-wide text-lg"
 							on:click={handleMenuButtonClick}
 						>
 							Contact
