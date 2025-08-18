@@ -14,18 +14,18 @@
 		
 <div
 	in:fly={{ x: -200, duration: 600 }}
-	class="relative bg-gradient-to-br from-[#e9e2f0] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto my-8 max-w-xl md:max-w-6xl overflow-hidden z-0"
+	class="relative bg-project-card-bg rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto my-8 max-w-xl md:max-w-6xl overflow-hidden z-0"
 > 
 	<!-- Text Column -->
 	<div class="flex flex-col p-8 z-10">
-		<p in:slide={{ y: -20, duration: 400 }} class="text-3xl text-gray-800">
+		<p in:slide={{ y: -20, duration: 400 }} class="text-3xl text-project-title">
 			{title}
 		</p>
-		<p in:fade={{ delay: 200, duration: 600 }} class="mt-1 text-lg text-gray-700">
+		<p in:fade={{ delay: 200, duration: 600 }} class="mt-1 text-lg text-project-description">
 			{description}
 		</p>
 		<div class="mt-4 flex-1 p-4 pr-10 rounded-lg">
-			<ul class="list-disc pl-5 space-y-2 text-gray-700">
+			<ul class="list-disc pl-5 space-y-2 text-project-feature">
 				{#each features as feat, i}
 					<li in:slide={{ x: -50, delay: 300 + i * 150, duration: 500 }}>
 						{feat}
@@ -38,7 +38,7 @@
                 <a
                 href={links.itchio}
                 target="_blank"
-                class="inline-flex items-center px-4 py-2 bg-rose-500 text-white font-medium rounded-lg shadow hover:bg-rose-800 transform hover:scale-105 transition"
+				class="inline-flex items-center px-4 py-2 bg-project-itchio-bg text-white font-medium rounded-lg shadow hover:bg-project-itchio-hover transform hover:scale-105 transition"
                 >
                 <Gamepad2 class="w-5 h-5 mr-2" />
                 itch.io
@@ -48,7 +48,7 @@
                 <a
                 href={links.github}
                 target="_blank"
-                class="inline-flex items-center px-4 py-2 bg-gray-800 text-white font-medium rounded-lg shadow hover:bg-black transform hover:scale-105 transition"
+				class="inline-flex items-center px-4 py-2 bg-project-github-bg text-white font-medium rounded-lg shadow hover:bg-project-github-hover transform hover:scale-105 transition"
                 >
                 <Github class="w-5 h-5 mr-2" />
                 GitHub
@@ -58,7 +58,7 @@
                 <a
                 href={links.openprocessing}
                 target="_blank"
-                class="inline-flex items-center px-4 py-2 bg-slate-600 text-white font-medium rounded-lg shadow hover:bg-slate-800 transform hover:scale-105 transition"
+				class="inline-flex items-center px-4 py-2 bg-project-openprocessing-bg text-white font-medium rounded-lg shadow hover:bg-project-openprocessing-hover transform hover:scale-105 transition"
                 >
                 <Shapes class="w-5 h-5 mr-2" />
                 Open Processing 

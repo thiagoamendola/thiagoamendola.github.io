@@ -10,7 +10,7 @@
 		<a href="https://github.com/thiagoamendola" class="m-3 group" 
 			aria-label="Visit Github profile"
 		>
-			<button class="p-2 text-contacts-icon">
+			<button class="p-2 text-contacts-icon-github rounded-full">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					role="img"
@@ -37,7 +37,7 @@
 		<a href="https://www.linkedin.com/in/thiago-amendola/" class="m-3 group"
 			aria-label="Visit LinkedIn profile"
 		>
-			<button class="p-2 text-contacts-icon">
+			<button class="p-2 text-contacts-icon-linkedin rounded-full">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					role="img"
@@ -78,7 +78,7 @@
 		<a href="https://ticolol.itch.io/" class="m-3 group"
 			aria-label="Visit itch.io profile"
 		>
-			<button class="p-2 text-contacts-icon">
+			<button class="p-2 text-contacts-icon-itchio rounded-full">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="235.452"
