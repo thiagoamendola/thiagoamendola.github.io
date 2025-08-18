@@ -13,10 +13,10 @@
 		
 <div
 	in:fly={{ x: -200, duration: 600 }}
-	class="relative p-8 bg-gradient-to-br from-[#e9e2f0] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto my-8 max-w-xl md:max-w-6xl overflow-hidden z-0"
+	class="relative bg-gradient-to-br from-[#e9e2f0] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto my-8 max-w-xl md:max-w-6xl overflow-hidden z-0"
 > 
 	<!-- Text Column -->
-	<div class="flex flex-col z-10">
+	<div class="flex flex-col p-8 z-10">
 		<p in:slide={{ y: -20, duration: 400 }} class="text-3xl text-gray-800">
 			{title}
 		</p>
@@ -78,7 +78,7 @@
 		in:fade={{ delay: 600, duration: 800 }}
 		src={image}
 		alt={altText}
-		class="block md:hidden w-full h-64 object-cover rounded-xl mt-4 z-0"
+		class="block md:hidden w-full h-64 object-cover rounded-b-xl z-0"
 	/>
 </div>
 
