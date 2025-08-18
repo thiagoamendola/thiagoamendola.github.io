@@ -1,4 +1,4 @@
-<div id="home" class="relative isolate px-6 lg:px-8 bg-[#d3dded]">
+<div id="home" class="relative isolate px-6 lg:px-8 bg-intro-bg">
 	<div class="mx-8 md:mx-auto max-w-2xl py-24 lg:py-16">
 		<div class="flex items-center">
 			<div class="mr-3 hidden md:block md:text-9xl" aria-label="wave" title="wave">👋</div>

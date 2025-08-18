@@ -2,7 +2,7 @@
 	let itchio = '/images/itchio-logo.svg';
 </script>
 
-<div id="contact" class="always-visible px-5 py-3 pb-5 lg:px-8 bg-[#819cc7]">
+<div id="contact" class="always-visible px-5 py-3 pb-5 lg:px-8 bg-contacts-bg">
 	<h1 class="text-center mt-4">Contact</h1>
 
 	<div class="flex justify-center items-center bg-transparent mt-4">
@@ -10,11 +10,11 @@
 		<a href="https://github.com/thiagoamendola" class="m-3 group" 
 			aria-label="Visit Github profile"
 		>
-			<button class="p-2 text-white">
+			<button class="p-2 text-contacts-icon">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					role="img"
-					class="w-12 h-12 fill-current group-hover:text-[#36393f] transition-all duration-300"
+					class="w-12 h-12 fill-current group-hover:text-contacts-icon-hover-github transition-all duration-300"
 					viewBox="0 0 24 24"
 				>
 					<path
@@ -37,11 +37,11 @@
 		<a href="https://www.linkedin.com/in/thiago-amendola/" class="m-3 group"
 			aria-label="Visit LinkedIn profile"
 		>
-			<button class="p-2 text-white">
+			<button class="p-2 text-contacts-icon">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					role="img"
-					class="w-12 h-12 fill-current group-hover:text-blue-600 transition-all duration-300"
+					class="w-12 h-12 fill-current group-hover:text-contacts-icon-hover-linkedin transition-all duration-300"
 					viewBox="0 0 256 256"
 				>
 					<path
@@ -78,13 +78,13 @@
 		<a href="https://ticolol.itch.io/" class="m-3 group"
 			aria-label="Visit itch.io profile"
 		>
-			<button class="p-2 text-white">
+			<button class="p-2 text-contacts-icon">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="235.452"
 					width="261.728"
 					role="img"
-					class="w-12 h-12 fill-current group-hover:text-[#fa5c5c] transition-all duration-300"
+					class="w-12 h-12 fill-current group-hover:text-contacts-icon-hover-itchio transition-all duration-300"
 					viewBox="0 0 245.37069 220.73612"
 				>
 					<path

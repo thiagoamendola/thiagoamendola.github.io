@@ -40,7 +40,7 @@
 	};
 </script>
 
-<div id="personal-projects" class="always-visible px-5 lg:px-8 py-3 pb-8 bg-[#d3dded]">
+<div id="personal-projects" class="always-visible px-5 lg:px-8 py-3 pb-8 bg-projects-bg">
 	<h1 class="text-center">Personal Projects</h1>
 
 	{#if ready}
