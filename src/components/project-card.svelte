@@ -13,17 +13,16 @@
 		
 <div
 	in:fly={{ x: -200, duration: 600 }}
-	class="relative p-8 bg-gradient-to-br from-[#f5f0fa] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto my-8 max-w-xl md:max-w-6xl"
+	class="relative p-8 bg-gradient-to-br from-[#e9e2f0] to-[#e7e0f5] rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto my-8 max-w-xl md:max-w-6xl overflow-hidden z-0"
 > 
 	<!-- Text Column -->
-	<div class="flex flex-col">
+	<div class="flex flex-col z-10">
 		<p in:slide={{ y: -20, duration: 400 }} class="text-3xl text-gray-800">
 			{title}
 		</p>
 		<p in:fade={{ delay: 200, duration: 600 }} class="mt-1 text-lg text-gray-700">
 			{description}
 		</p>
-
 		<div class="mt-4 flex-1 p-4 pr-10 rounded-lg">
 			<ul class="list-disc pl-5 space-y-2 text-gray-700">
 				{#each features as feat, i}
@@ -33,7 +32,6 @@
 				{/each}
 			</ul>
 		</div>
-
 		<div class="mt-4 flex flex-wrap gap-3">
             {#if links.itchio}
                 <a
@@ -68,15 +66,20 @@
 		</div>
 	</div>
 
-	<!-- Image Column -->
-	<div class="flex w-full justify-end items-center mr-8 mt-4 mb-4">
-		<img
-			in:fade={{ delay: 600, duration: 800 }}
-			src={image}
-			alt={altText}
-			class="h-auto rounded-xl w-full max-w-[600px] md:max-w-[720px]"
-		/>
-	</div>
+	<!-- Image absolutely positioned on right half -->
+	<img
+		in:fade={{ delay: 600, duration: 800 }}
+		src={image}
+		alt={altText}
+		class="hidden md:block absolute top-0 right-0 bottom-0 h-full w-1/2 object-cover rounded-r-2xl z-0"
+	/>
+	<!-- For mobile, show image below text -->
+	<img
+		in:fade={{ delay: 600, duration: 800 }}
+		src={image}
+		alt={altText}
+		class="block md:hidden w-full h-64 object-cover rounded-xl mt-4 z-0"
+	/>
 </div>
 
 <!-- REFACTOR THE FOLLOWING -->
