@@ -1,6 +1,7 @@
 <script>
 	import { fly, fade, slide, scale } from 'svelte/transition';
 	import { Gamepad2, Github, Shapes } from 'lucide-svelte'; // or your icons
+	import ProjectCardMedia from './project-card-media.svelte';
 	export let title;
 	export let tag;
 	export let description;
@@ -78,77 +79,22 @@
 			{/if}
 		</div>
 	</div>
-
-	<!-- Image absolutely positioned on right half -->
-	{#if video}
-		<div
-			class="hidden md:block absolute top-0 right-0 bottom-0 h-full w-1/2 overflow-hidden rounded-r-2xl z-0 flex items-center justify-center bg-black"
-		>
-			<video
-				src={video}
-				autoplay
-				loop
-				muted
-				playsinline
-				class="w-full h-full object-cover absolute top-0 left-0 rounded-r-2xl"
-			></video>
-		</div>
-	{:else if staticImage}
-		<div
-			class="hidden md:block absolute top-0 right-0 bottom-0 h-full w-1/2 overflow-hidden rounded-r-2xl z-0"
-		>
-			<img src={image} alt={altText} class="w-full h-full object-cover absolute top-0 left-0" />
-			<img
-				src={image}
-				alt={altText}
-				class="w-full h-full object-cover absolute top-0 left-0 zoom-in"
-			/>
-		</div>
-	{:else}
-		<div
-			class="hidden md:block absolute top-0 right-0 bottom-0 h-full w-1/2 overflow-hidden rounded-r-2xl z-0"
-		>
-			<img
-				in:fade={{ delay: 600, duration: 800 }}
-				src={image}
-				alt={altText}
-				class="w-full h-full object-cover absolute top-0 left-0"
-			/>
-		</div>
-	{/if}
-	<!-- For mobile, show image below text -->
-	{#if video}
-		<div
-			class="block md:hidden w-full h-64 overflow-hidden rounded-b-xl z-0 relative flex items-center justify-center bg-black"
-		>
-			<video
-				src={video}
-				autoplay
-				loop
-				muted
-				playsinline
-				class="w-full h-full object-cover absolute top-0 left-0 rounded-b-xl"
-			></video>
-		</div>
-	{:else if staticImage}
-		<div class="block md:hidden w-full h-64 overflow-hidden rounded-b-xl z-0 relative">
-			<img src={image} alt={altText} class="w-full h-full object-cover absolute top-0 left-0" />
-			<img
-				src={image}
-				alt={altText}
-				class="w-full h-full object-cover absolute top-0 left-0 zoom-in"
-			/>
-		</div>
-	{:else}
-		<div class="block md:hidden w-full h-64 overflow-hidden rounded-b-xl z-0 relative">
-			<img
-				in:fade={{ delay: 600, duration: 800 }}
-				src={image}
-				alt={altText}
-				class="w-full h-full object-cover absolute top-0 left-0"
-			/>
-		</div>
-	{/if}
+		<!-- Desktop -->
+		<ProjectCardMedia
+			{video}
+			{image}
+			{staticImage}
+			{altText}
+			containerClass="hidden md:block absolute top-0 right-0 bottom-0 h-full w-1/2 overflow-hidden rounded-r-2xl z-0"
+		/>
+		<!-- Mobile -->
+		<ProjectCardMedia
+			{video}
+			{image}
+			{staticImage}
+			{altText}
+			containerClass="block md:hidden w-full h-64 overflow-hidden rounded-b-xl z-0 relative"
+		/>
 </div>
 
 <!-- REFACTOR THE FOLLOWING -->
