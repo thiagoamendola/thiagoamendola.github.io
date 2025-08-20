@@ -5,6 +5,10 @@
 	import Contact from '../components/contact.svelte';
 </script>
 
+<svelte:head>
+  <title>Thiago Amendola</title>
+</svelte:head>
+
 <div class="relative">
 	<div class="pb-20">
 		<Navbar />
