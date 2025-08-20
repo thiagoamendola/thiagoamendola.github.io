@@ -10,14 +10,14 @@
 	const katazukeProject = {
 		title: 'Katazuke',
 		tag: 'Personal',
-		description: 'Party game inspired by “Overcooked” and Marie Kondo in Unity',
+		description: 'Party game inspired by “Overcooked” and Konmari in Unity',
 		features: [
 			'Implemented Gameplay, UI, Controller support and Tutorial systems.',
 			'Created dynamic loading system that uses single game environment with multiple game scenes seamlessly.'
 		],
 		image: '/images/katazuke.jpeg',
 		video: '/videos/katazuke.mp4',
-		altText: 'Screenshot of game Katazuke, showing two Matryoshka-like dolls having a discussion in a cardboard bedroom',
+		altText: 'Media of game Katazuke, showing two Matryoshka-like dolls having a discussion in a cardboard bedroom',
 		links: {
 			itchio: 'https://ticolol.itch.io/katazuke',
 			github: 'https://github.com/thiagoamendola/katazuke',
