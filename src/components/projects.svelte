@@ -15,7 +15,7 @@
 			'Created dynamic loading system that uses single game environment with multiple game scenes seamlessly.'
 		],
 		image: '/images/katazuke.jpeg',
-		staticImage: true,
+		video: '/videos/katazuke.mp4',
 		altText: 'Screenshot of game Katazuke, showing two Matryoshka-like dolls having a discussion in a cardboard bedroom',
 		links: {
 			itchio: 'https://ticolol.itch.io/katazuke',

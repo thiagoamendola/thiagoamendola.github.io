@@ -28,6 +28,6 @@ npm run gh-pages
 ### TODO
 
 - Make About
+- Add Monster Mash
 - Add Luar Assault
-- Make video/gif/boilerplate image for the intro background
 - Make game jam section
