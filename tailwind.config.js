@@ -24,6 +24,8 @@ export default {
         'project-github-hover': '#000000', // black
         'project-openprocessing-bg': '#475569',
         'project-openprocessing-hover': '#1e293b',
+  'project-tag-bg': '#6b7280', // gray-500
+  'project-tag-text': '#e5e7eb', // gray-200
         // Contact colors
         'contacts-bg': '#d9e2ef',
         'contacts-icon-github': '#36393f',

@@ -9,6 +9,7 @@
 
 	const katazukeProject = {
 		title: 'Katazuke',
+		tag: 'Personal',
 		description: 'Party game inspired by “Overcooked” and Marie Kondo in Unity',
 		features: [
 			'Implemented Gameplay, UI, Controller support and Tutorial systems.',
@@ -25,6 +26,7 @@
 
 	const godotLutProject = {
 		title: 'Godot Color LUT Shader',
+		tag: 'Personal',
 		description: 'Godot Shader for cheap design-oriented screen effects',
 		features: [
 			'Created an open-source, low-computing shader that allows changing rendered content’s color palette by providing a designer-created Look-Up Table textures.',

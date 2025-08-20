@@ -2,6 +2,7 @@
 	import { fly, fade, slide, scale } from 'svelte/transition';
 	import { Gamepad2, Github, Shapes } from 'lucide-svelte'; // or your icons
 	export let title;
+	export let tag;
 	export let description;
 	export let features = [];
 	export let image;
@@ -19,9 +20,16 @@
 > 
 	<!-- Text Column -->
 	<div class="flex flex-col p-8 z-10">
-		<p in:slide={{ y: -20, duration: 400 }} class="text-3xl text-project-title">
-			{title}
-		</p>
+						 <div class="flex items-end gap-2">
+							 <p in:slide={{ y: -20, duration: 400 }} class="text-3xl text-project-title">
+								 {title}
+							 </p>
+							 {#if tag}
+								 <span class="text-xs px-1 py-0.5 mb-1 ml-1.5 rounded bg-project-tag-bg text-project-tag-text align-bottom" style="white-space:nowrap;">
+									 {tag}
+								 </span>
+							 {/if}
+						 </div>
 		<p in:fade={{ delay: 200, duration: 600 }} class="mt-1 text-lg text-project-description">
 			{description}
 		</p>
