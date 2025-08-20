@@ -68,7 +68,7 @@
 							class="block mt-4 lg:inline-block lg:mt-0 text-navbar-text hover:text-navbar-hover-text mr-8 font-semibold tracking-wide text-lg"
 							on:click={handleMenuButtonClick}
 						>
-							Personal Projects
+							Projects
 						</a>
 						<a
 							href="#contact"

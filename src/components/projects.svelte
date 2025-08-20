@@ -43,7 +43,7 @@
 </script>
 
 <div id="personal-projects" class="always-visible px-5 lg:px-8 py-6 bg-projects-bg">
-	<h1 class="text-center">Personal Projects</h1>
+	<h1 class="text-center">Projects</h1>
 
 	{#if ready}
 		
