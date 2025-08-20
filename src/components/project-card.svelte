@@ -37,7 +37,7 @@
 		<p in:fade={{ delay: 200, duration: 600 }} class="mt-1 text-lg text-project-description">
 			{description}
 		</p>
-		<div class="mt-4 flex-1 p-4 pr-10 rounded-lg">
+		<div class="my-2 flex-1 p-4 pr-10 rounded-lg">
 			<ul class="list-disc pl-5 space-y-2 text-project-feature">
 				{#each features as feat, i}
 					<li in:slide={{ x: -50, delay: 300 + i * 150, duration: 500 }}>
