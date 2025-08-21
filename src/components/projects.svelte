@@ -24,6 +24,21 @@
 		}
 	};
 
+	const monsterMashProject = {
+		title: 'Monster Mash',
+		tag: 'Javary Co.',
+		description: 'Mobile physics-based puzzle game',
+		features: [
+			'Implemented Gameplay, UI, Core Loop elements, monetization and optimization using Godot.',
+			'Worked with Procedural Generation: parametrized illustrations for mobile devices, and dynamic difficulty gradation system for game levels.'
+		],
+		video: '/videos/monster-mash.mp4',
+		altText: 'Media of game Monster Mash, showing colorful, sphere-shaped monsters being fused and popped like balloons.',
+		links: {
+			instagram: 'https://www.instagram.com/javarystudios/',
+		}
+	};
+
 	const godotLutProject = {
 		title: 'Godot Color LUT Shader',
 		tag: 'Personal',
@@ -48,6 +63,7 @@
 	{#if ready}
 		
 	<ProjectCard {...katazukeProject} />
+	<ProjectCard {...monsterMashProject} />
 	<ProjectCard {...godotLutProject} />
 
 	{/if}
