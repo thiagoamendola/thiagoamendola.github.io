@@ -1,7 +1,6 @@
 <script>
 	import { fly, fade, slide, scale } from 'svelte/transition';
-	import { Gamepad2, Github, Shapes } from 'lucide-svelte'; // or your icons
-	import { siInstagram } from "simple-icons/icons"; // import the Instagram icon
+	import { siInstagram, siItchdotio, siGithub } from "simple-icons/icons";
 	import ProjectCardMedia from './project-card-media.svelte';
 	export let title;
 	export let tag;
@@ -47,14 +46,23 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="mt-4 flex flex-wrap gap-3">
+		<div class="md:mt-2 flex flex-wrap gap-3">
 			{#if links.itchio}
 				<a
 					href={links.itchio}
 					target="_blank"
-					class="inline-flex items-center px-4 py-2 bg-project-itchio-bg text-white font-medium rounded-lg shadow hover:bg-project-itchio-hover transform hover:scale-105 transition"
+					class="inline-flex items-center px-4 py-2.5 bg-project-itchio-bg text-white font-medium rounded-lg shadow hover:bg-project-itchio-hover transform hover:scale-105 transition"
 				>
-					<Gamepad2 class="w-5 h-5 mr-2" />
+					<svg 
+						{siItchdotio} 
+						role="img" 
+						viewBox="0 0 24 24" 
+						xmlns="http://www.w3.org/2000/svg"
+						class="w-6 h-6 mr-2 fill-current"
+						>
+						<title>{siItchdotio.title}</title>
+						<path d={siItchdotio.path} />
+					</svg>
 					itch.io
 				</a>
 			{/if}
@@ -62,9 +70,18 @@
 				<a
 					href={links.github}
 					target="_blank"
-					class="inline-flex items-center px-4 py-2 bg-project-github-bg text-white font-medium rounded-lg shadow hover:bg-project-github-hover transform hover:scale-105 transition"
+					class="inline-flex items-center px-4 py-2.5 bg-project-github-bg text-white font-medium rounded-lg shadow hover:bg-project-github-hover transform hover:scale-105 transition"
 				>
-					<Github class="w-5 h-5 mr-2" />
+					<svg 
+						{siGithub} 
+						role="img" 
+						viewBox="0 0 24 24" 
+						xmlns="http://www.w3.org/2000/svg"
+						class="w-6 h-6 mr-2 fill-current"
+						>
+						<title>{siGithub.title}</title>
+						<path d={siGithub.path} />
+					</svg>
 					GitHub
 				</a>
 			{/if}
@@ -72,9 +89,14 @@
 				<a
 					href={links.openprocessing}
 					target="_blank"
-					class="inline-flex items-center px-4 py-2 bg-project-openprocessing-bg text-white font-medium rounded-lg shadow hover:bg-project-openprocessing-hover transform hover:scale-105 transition"
+					class="inline-flex items-center px-4 py-2.5 bg-project-openprocessing-bg text-white font-medium rounded-lg shadow hover:bg-project-openprocessing-hover transform hover:scale-105 transition"
 				>
-					<Shapes class="w-5 h-5 mr-2" />
+					<img
+						src="https://openprocessing.org/assets/img/logo/logo_36x30_white@2x.png"
+						alt="OpenProcessing logo"
+						class="w-6 h-5 mr-2"
+						/>
+					<!-- <Shapes class="w-6 h-6 mr-2" /> -->
 					Open Processing
 				</a>
 			{/if}
@@ -82,14 +104,14 @@
 				<a
 					href={links.instagram}
 					target="_blank"
-					class="inline-flex items-center px-4 py-2 bg-project-instagram-bg text-white font-medium rounded-lg shadow hover:bg-project-instagram-hover transform hover:scale-105 transition"
+					class="inline-flex items-center px-4 py-2.5 bg-project-instagram-bg text-white font-medium rounded-lg shadow hover:bg-project-instagram-hover transform hover:scale-105 transition"
 				>
 					<svg 
 						{siInstagram} 
 						role="img" 
 						viewBox="0 0 24 24" 
 						xmlns="http://www.w3.org/2000/svg"
-						class="w-5 h-5 mr-2 fill-current"
+						class="w-6 h-6 mr-2 fill-current"
 						>
 						<title>{siInstagram.title}</title>
 						<path d={siInstagram.path} />

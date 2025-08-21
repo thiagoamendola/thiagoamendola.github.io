@@ -18,7 +18,7 @@ export default {
         'project-title': '#374151',
         'project-description': '#4b5563',
         'project-feature': '#4b5563',
-        'project-itchio-bg': '#f43f5e',
+        'project-itchio-bg': '#FA5C5C',
         'project-itchio-hover': '#881337',
         'project-github-bg': '#1f2937',
         'project-github-hover': '#000000', // black

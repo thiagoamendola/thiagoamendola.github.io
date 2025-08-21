@@ -37,7 +37,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"lucide-svelte": "^0.501.0",
 		"simple-icons": "^15.11.0"
 	}
 }
