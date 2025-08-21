@@ -27,9 +27,9 @@
 	const monsterMashProject = {
 		title: 'Monster Mash',
 		tag: 'Javary Co.',
-		description: 'Mobile physics-based puzzle game',
+		description: 'Mobile physics-based puzzle game in Godot',
 		features: [
-			'Implemented Gameplay, UI, Core Loop elements, monetization and optimization using Godot.',
+			'Implemented multiple features ranging gameplay, UI, core Loop elements, monetization and optimization.',
 			'Worked with Procedural Generation: parametrized illustrations for mobile devices, and dynamic difficulty gradation system for game levels.'
 		],
 		video: '/videos/monster-mash.mp4',
