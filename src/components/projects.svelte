@@ -24,6 +24,23 @@
 		}
 	};
 
+	const luarAssaultProject = {
+		title: 'Luar Assault',
+		tag: 'Personal',
+		description: 'Star Fox like 3D space shooter for GBA using C++',
+		features: [
+			"Used Butano engine to create a Game Boy Advance game, extending the engine's 3D rendering capabilities.",
+			'Implemented gameplay, UI, engine optimizations and multiple tools for asset importing.',
+		],
+		image: '/images/luar-assault-3.png',
+		video: '/videos/luar-assault-v0.3.mp4',
+		altText: 'Media of game Luar Assault, showing a low-poly spaceship flying and destroying asteroids in a 3D space shooter game',
+		links: {
+			itchio: 'https://ticolol.itch.io/katazuke',
+			github: 'https://github.com/thiagoamendola/luar-assault',
+		}
+	};
+
 	const monsterMashProject = {
 		title: 'Monster Mash',
 		tag: 'Javary Co.',
@@ -63,6 +80,7 @@
 	{#if ready}
 		
 	<ProjectCard {...katazukeProject} />
+	<ProjectCard {...luarAssaultProject} />
 	<ProjectCard {...monsterMashProject} />
 	<ProjectCard {...godotLutProject} />
 
