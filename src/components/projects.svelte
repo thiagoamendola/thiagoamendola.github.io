@@ -36,7 +36,6 @@
 		video: '/videos/luar-assault-v0.3.mp4',
 		altText: 'Media of game Luar Assault, showing a low-poly spaceship flying and destroying asteroids in a 3D space shooter game',
 		links: {
-			itchio: 'https://ticolol.itch.io/katazuke',
 			github: 'https://github.com/thiagoamendola/luar-assault',
 		}
 	};
