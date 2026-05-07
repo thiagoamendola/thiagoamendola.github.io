@@ -33,7 +33,7 @@
 			'Implemented gameplay, UI, engine optimizations and multiple tools for asset importing.',
 		],
 		image: '/images/luar-assault-3.png',
-		video: '/videos/luar-assault-v0.3.mp4',
+		video: '/videos/luar-assault-v0.6.mp4',
 		altText: 'Media of game Luar Assault, showing a low-poly spaceship flying and destroying asteroids in a 3D space shooter game',
 		links: {
 			github: 'https://github.com/thiagoamendola/luar-assault',
@@ -78,8 +78,8 @@
 
 	{#if ready}
 		
-	<ProjectCard {...katazukeProject} />
 	<ProjectCard {...luarAssaultProject} />
+	<ProjectCard {...katazukeProject} />
 	<ProjectCard {...monsterMashProject} />
 	<ProjectCard {...godotLutProject} />
 
